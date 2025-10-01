@@ -1,0 +1,23 @@
+{
+  "name": "hyperliquid-orderbook-collector",
+  "version": "1.0.0",
+  "description": "Collect and save orderbooks from all Hyperliquid spot coins",
+  "type": "module",
+  "main": "dist/collect-orderbooks.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/collect-orderbooks.js",
+    "dev": "tsx collect-orderbooks.ts",
+    "collect": "npm run build && npm start"
+  },
+  "dependencies": {
+    "@nktkas/hyperliquid": "^0.16.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.8",
+    "@types/ws": "^8.18.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  }
+}
